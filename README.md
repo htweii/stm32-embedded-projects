@@ -1,5 +1,6 @@
 # STM32 Embedded Systems Portfolio
 This repository showcases STM32-based embedded systems projects, focusing on peripheral control, real-time processing, and firmware development.
+Built using STM32CubeIDE and Embedded C.
 
 ## 👩🏻‍💻 Background
 - Android Application Engineer (5+ years, Java)
