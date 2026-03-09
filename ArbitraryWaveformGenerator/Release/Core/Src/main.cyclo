@@ -1,0 +1,6 @@
+../Core/Src/main.c:113:6:HAL_DAC_ConvCpltCallbackCh1	7
+../Core/Src/main.c:156:6:Generate_Waveforms	12
+../Core/Src/main.c:227:6:Generate_Low_Wave	2
+../Core/Src/main.c:307:6:SystemClock_Config	4
+../Core/Src/main.c:238:5:main	10
+../Core/Src/main.c:491:6:Error_Handler	1
