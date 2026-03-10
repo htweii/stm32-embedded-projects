@@ -8,13 +8,13 @@ The display increments every second and continuously cycles through all hexadeci
 - 470Ω resistors
 
 ## Pin Mapping
-PB0 -> Segment A
-PB1 -> Segment B
-PB2 -> Segment C
-PB3 -> Segment D
-PB4 -> Segment E
-PB5 -> Segment F
-PB6 -> Segment G
+- PB0 -> Segment A
+- PB1 -> Segment B
+- PB2 -> Segment C
+- PB3 -> Segment D
+- PB4 -> Segment E
+- PB5 -> Segment F
+- PB6 -> Segment G
 
 ## Features
 - GPIO control for LED segments
