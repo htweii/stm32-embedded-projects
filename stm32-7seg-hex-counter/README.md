@@ -7,6 +7,8 @@ The system continuously counts from 0 to F and displays the value on the 7-segme
 
 The display increments every second and continuously cycles through all hexadecimal digits.
 
+---
+
 ## Hardware Platform
 - MCU: STM32 Nucleo-L476RG  
 - Development Tool: STM32CubeIDE  
@@ -15,23 +17,33 @@ The display increments every second and continuously cycles through all hexadeci
 External Components:
 - Single digit 7-segment display
 
+---
+
 ## System Architecture
 Counter → Segment Lookup Table → GPIO Output → 7-Segment Display
 
 The firmware converts each hexadecimal digit into a segment pattern and drives the corresponding GPIO pins.
+
+---
 
 ## Features
 - Hexadecimal counter (0–F)
 - GPIO-based LED segment control
 - Lookup table segment encoding
 
+---
+
 ## Peripherals Used
 - GPIO
+
+---
 
 ## Implementation Details
 Each hexadecimal digit is mapped to a 7-segment LED pattern using a lookup table.
 
 The firmware updates the GPIO output pins according to the encoded segment pattern.
+
+---
 
 ## Embedded Concepts
 - GPIO configuration
