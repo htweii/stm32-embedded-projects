@@ -1,5 +1,19 @@
 # STM32 7-Segment Hexadecimal Counter
 
+## Demo
+
+Demo 1
+![Demo]([Images]/demo-1.gif)
+Video:
+https://youtube.com/shorts/1x1EWusqgnU?feature=share
+
+Demo 2
+![Demo]([Images]/demo-2.gif)
+Video:
+https://youtube.com/shorts/Xba3J3fb_Pc?feature=share
+
+---
+
 ## Project Overview
 This project implements a hexadecimal counter using an STM32 Nucleo-L476RG and a single-digit 7-segment display.
 
@@ -10,9 +24,9 @@ The display increments every second and continuously cycles through all hexadeci
 ---
 
 ## Hardware Platform
-- MCU: STM32 Nucleo-L476RG  
-- Development Tool: STM32CubeIDE  
-- Programming Language: C  
+- MCU: STM32 Nucleo-L476RG
+- Development Tool: STM32CubeIDE
+- Programming Language: C
 
 External Components:
 - Single digit 7-segment display
