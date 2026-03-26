@@ -1,5 +1,14 @@
 # STM32 Random Number Generator with EEPROM and LCD
 
+## Demo
+
+![Demo]([Images]/demo.gif)
+
+- Video:
+https://youtube.com/shorts/FCf5yvo7H1Q?feature=share
+
+---
+
 ## Project Overview
 
 This project demonstrates random number generation, external EEPROM storage, and LCD display using an STM32 Nucleo-L476RG.
@@ -10,9 +19,9 @@ A random number is generated using RTC and ADC noise as a seed, stored in an ext
 
 ## Hardware Platform
 
-- MCU: STM32 Nucleo-L476RG  
-- Development Tool: STM32CubeIDE  
-- Programming Language: C  
+- MCU: STM32 Nucleo-L476RG
+- Development Tool: STM32CubeIDE
+- Programming Language: C
 
 External Components:
 - 24LC256 I2C EEPROM
