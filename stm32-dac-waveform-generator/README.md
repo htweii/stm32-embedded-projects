@@ -1,5 +1,14 @@
 # STM32 DAC Waveform Generator
 
+## Demo
+
+![Demo]([Images]/demo.gif)
+
+- Video:
+https://youtu.be/BCqH8ATaU8o
+
+---
+
 ## Project Overview
 
 This project implements a multi-waveform signal generator using the DAC peripheral of the STM32 Nucleo-L476RG.
@@ -12,9 +21,9 @@ A user button is used to switch between different waveform types in real time.
 
 ## Hardware Platform
 
-- MCU: STM32 Nucleo-L476RG  
-- Development Tool: STM32CubeIDE  
-- Programming Language: C  
+- MCU: STM32 Nucleo-L476RG
+- Development Tool: STM32CubeIDE
+- Programming Language: C
 
 External Components:
 - Oscilloscope or signal analyzer (for waveform observation)
