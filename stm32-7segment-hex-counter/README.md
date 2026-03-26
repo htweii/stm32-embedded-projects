@@ -3,13 +3,17 @@
 ## Demo
 
 Demo 1
+
 ![Demo]([Images]/demo-1.gif)
-Video:
+
+- Video:
 https://youtube.com/shorts/1x1EWusqgnU?feature=share
 
 Demo 2
+
 ![Demo]([Images]/demo-2.gif)
-Video:
+
+- Video:
 https://youtube.com/shorts/Xba3J3fb_Pc?feature=share
 
 ---
