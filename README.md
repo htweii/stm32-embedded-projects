@@ -9,8 +9,8 @@ I strive to apply my previous software engineering discipline to the firmware do
 
 ## 📜 Certifications & Training
 - **Code in Place 2025 (Python Programming & Computational Logic)** | Stanford University
-- **High-Performance ARM Microcontroller Implementation** | NTHU / Tze-Chiang Foundation
-- **STM32 Microcontroller Practical Course** | NYCU / STEM Program
+- **High-Performance ARM Microcontroller Implementation** | TZE-CHIANG FOUNDATION OF SCIENCE & TECHNOLOGY
+- **STM32 Microcontroller Practical Course** | NYCU LASER SYSTEM RESEARCH CENTER
 
 ---
 
