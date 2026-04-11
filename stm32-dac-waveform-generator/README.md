@@ -4,80 +4,82 @@
 
 ![Demo]([Images]/demo.gif)
 
-- Video:
-https://youtu.be/BCqH8ATaU8o
+### Video Demonstration
+- 📺 Video: https://youtu.be/BCqH8ATaU8o
 
 ---
 
 ## Project Overview
 
-This project implements a multi-waveform signal generator using the DAC peripheral of the STM32 Nucleo-L476RG.
+This project utilizes the STM32 Nucleo-L476RG's DAC to implement a multi-waveform signal generator, integrated with an Arduino Uno acting as the ADC acquisition stage to transmit data to the PC software ZaidaScope for real-time waveform verification.
 
-The system generates multiple analog waveforms using a waveform lookup table and continuously output through the DAC using DMA transfer.
+The system uses waveform Lookup Tables to generate multiple analog waveforms, and users can switch between different waveforms in real-time through the User Button.
 
-A user button is used to switch between different waveform types in real time.
+It leverages DMA Circular Mode for high-speed data transmission, demonstrating a robust cross-platform hardware verification setup.
+
+### Documentation
+- For more technical details, please refer to the:
+  📄 [**Project Report (PDF)**](https://github.com/htweii/stm32-embedded-projects/blob/main/stm32-dac-waveform-generator/%5BDocs%5D/stm32-dac-waveform-generator-v1.0-hsu.pdf)
 
 ---
 
 ## Hardware Platform
 
-- MCU: STM32 Nucleo-L476RG
-- Development Tool: STM32CubeIDE
-- Programming Language: C
-
-External Components:
-- Oscilloscope or signal analyzer (for waveform observation)
+- **MCU Control Source:** STM32 Nucleo-L476RG
+- **MCU Acquisition Receiver:** Arduino Uno (Handles ADC sampling and forwarding)
+- **Development Tool:** STM32CubeIDE
+- **Programming Language:** C
+- **External Component:** ZaidaScope (PC software, acting as an oscilloscope to observe waveforms)
 
 ---
 
 ## System Architecture
 
-Waveform Table → DMA → DAC → Analog Output
+### Signal Generation End (STM32 Nucleo-L476RG)
+Waveform Lookup Tables → DMA (Circular Mode) → DAC → Analog Signal Output
 
-Timer2 triggers DAC updates at a fixed sampling rate while DMA continuously transfers waveform data to the DAC.
+### Signal Monitoring End (Arduino Uno & PC)
+STM32 DAC Output → Arduino ADC Sampling → Serial Transmission → ZaidaScope (PC)
 
 ---
 
 ## Features
 
-- Multiple waveform generation
-- DAC analog output
-- DMA circular transfer
-- Button-controlled waveform switching
-
-Supported waveforms:
-- Sawtooth wave
-- Square wave
-- Sine wave
-- Trapezoidal wave
-- Half-sine wave
-- Triangle wave
-- Noise wave
+- Multiple Waveform Generation
+- DAC Analog Output
+- DMA Circular Transmission
+- User Button Control for Waveform Switching
+- **Supported Waveforms:**
+  - Sawtooth wave
+  - Square wave
+  - Sine wave
+  - Trapezoidal wave
+  - Half-sine wave
+  - Triangle wave
+  - Noise wave
 
 ---
 
 ## Peripherals Used
 
 - DAC
-- DMA
+- DMA Circular
 - Timer
-- GPIO
+- GPIO & EXTI
 
 ---
 
 ## Implementation Details
 
-Waveform samples are stored in lookup tables in memory.
-
-DMA transfers waveform samples to the DAC data register in circular mode.
-
-Timer2 is used to trigger DAC conversion at a fixed frequency.
+- Waveform samples are stored in Lookup Tables in memory.
+- The Timer2 triggers DAC conversion at a fixed frequency, and DMA transfers waveform samples to the DAC data register in circular mode without CPU intervention.
+- The Arduino Uno samples the analog voltage output from STM32 and transmits values to ZaidaScope on the PC via Serial communication to output real-time waveforms, verifying the accuracy of the DAC output.
 
 ---
 
 ## Embedded Concepts
 
-- DAC signal generation
-- DMA memory-to-peripheral transfer
-- Timer-triggered sampling
-- Embedded waveform synthesis
+- DAC Signal Generation
+- DMA Data Transfer from Memory to Peripheral
+- Timer Triggered Sampling
+- Embedded Waveform Synthesis
